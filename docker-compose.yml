@@ -29,7 +29,7 @@ services:
       - wp_custom_content:/var/www/html/wp-content/themes/tema-webfusion
 
   git-updater:
-    # Contenedor dedicado a sincronizar Git, cumple la rama derecha de tu esquema
+    # Contenedor dedicado a sincronizar Git
     image: alpine/git
     volumes:
       - wp_custom_content:/destino_wordpress
